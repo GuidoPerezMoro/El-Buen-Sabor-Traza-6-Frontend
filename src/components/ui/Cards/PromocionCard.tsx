@@ -50,10 +50,9 @@ const PromocionCard: React.FC<PromocionCardProps> = ({ promocion, addToCart }) =
             onClick={handleAddToCart}
             fullWidth
             variant="contained"
-            color="primary"
             disabled={isLoading}
             endIcon={isLoading ? <CircularProgress size={20} color="inherit" /> : null}
-            sx={{mb: 1}}
+            sx={{mb: 1, backgroundColor:'#E66200', '&:hover': { backgroundColor: '#BB6201' }}}
           >
             {isLoading ? 'Agregando...' : 'Agregar al carrito'}
           </Button>

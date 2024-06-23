@@ -26,7 +26,7 @@ const ContactSection: React.FC = () => {
           <TextField fullWidth multiline rows={4} label="Mensaje" variant="outlined" />
         </Grid>
         <Grid item xs={12}>
-          <Button variant="contained" color="primary">
+          <Button variant="contained" sx={{backgroundColor:'#E66200', '&:hover': { backgroundColor: '#BB6201' }}}>
             Enviar
           </Button>
         </Grid>

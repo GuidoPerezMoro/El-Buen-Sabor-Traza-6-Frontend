@@ -89,7 +89,7 @@ const PromotionsSection: React.FC<PromotionsSectionProps> = ({ addToCart }) => {
                 </Typography>
                 <Typography
                   variant="h2"
-                  color="primary"
+                  color="#E66200"
                   gutterBottom
                   sx={{ fontSize: isMobile ? '2rem' : '2.5rem' }}
                 >
@@ -98,7 +98,7 @@ const PromotionsSection: React.FC<PromotionsSectionProps> = ({ addToCart }) => {
                 <Typography variant="body1" paragraph>
                   {promocion.descripcionDescuento}
                 </Typography>
-                <Typography variant="h4" color="primary" sx={{ mb: 2 }}>
+                <Typography variant="h4" color="#E66200" sx={{ mb: 2 }}>
                   ${promocion.precioPromocional}
                 </Typography>
                 <Button
@@ -107,7 +107,7 @@ const PromotionsSection: React.FC<PromotionsSectionProps> = ({ addToCart }) => {
                   color="primary"
                   disabled={isLoading}
                   endIcon={isLoading ? <CircularProgress size={20} color="inherit" /> : null}
-                  sx={{ mt: 2 }}
+                  sx={{ mt: 2 , backgroundColor:'#E66200', '&:hover': { backgroundColor: '#BB6201' }}}
                 >
                   {isLoading ? 'Agregando...' : 'Ordenar Ahora'}
                 </Button>
@@ -129,7 +129,7 @@ const PromotionsSection: React.FC<PromotionsSectionProps> = ({ addToCart }) => {
               <Button
                 onClick={handleNavigateToPromotions}
                 variant="contained"
-                color="primary"
+                sx={{backgroundColor:'#E66200', '&:hover': { backgroundColor: '#BB6201' }}}
               >
                 Ver más promociones
               </Button>

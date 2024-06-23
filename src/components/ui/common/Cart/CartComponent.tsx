@@ -56,7 +56,7 @@ const CartComponent: React.FC<CartComponentProps> = ({ cart, open, onClose, onAd
           <ListItem>
             <Button
               variant="contained"
-              color="primary"
+              sx={{backgroundColor:'#E66200', '&:hover': { backgroundColor: '#BB6201' }}}
               fullWidth
             >
               Realizar Pedido
@@ -66,7 +66,7 @@ const CartComponent: React.FC<CartComponentProps> = ({ cart, open, onClose, onAd
           <ListItem>
             <Button
               variant="outlined"
-              color="secondary"
+              sx={{color:'#E66200', backgroundColor:'white', '&:hover': { color:'white', backgroundColor: 'grey' }}}
               fullWidth
               onClick={onClearCart}
             >

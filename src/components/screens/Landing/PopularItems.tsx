@@ -46,10 +46,10 @@ const PopularItems: React.FC<PopularItemsProps> = ({ addToCart }) => {
     return (
         <Container sx={{ my: 4 }}>
             <Typography variant="h4" align="center" gutterBottom sx={{ fontSize: isMobile ? '1.5rem' : '2rem' }}>
-                Explora nuestra variedad de productos
+                Descubre nuestros productos
             </Typography>
             <Typography variant="subtitle1" align="center" gutterBottom sx={{ mb: 3, fontSize: isMobile ? '1rem' : '1.25rem' }}>
-                Descubre una selección de nuestros productos para satisfacer tus gustos y necesidades
+               Explora la variedad excepcional de productos culinarios que capturan la esencia de la buena comida.
             </Typography>
             <Box display={{ xs: 'none', md: 'block' }}>
                 <Grid container spacing={4}>
@@ -70,7 +70,7 @@ const PopularItems: React.FC<PopularItemsProps> = ({ addToCart }) => {
                 </Carousel>
             </Box>
             <Box textAlign="center" sx={{ mt: 4 }}>
-                <Button variant="contained" color="primary" onClick={() => navigate('/productos')}>
+                <Button variant="contained" color="primary" onClick={() => navigate('/productos')} sx={{backgroundColor:'#E66200', '&:hover': { backgroundColor: '#BB6201' }}}>
                     Ver todos los productos
                 </Button>
             </Box>

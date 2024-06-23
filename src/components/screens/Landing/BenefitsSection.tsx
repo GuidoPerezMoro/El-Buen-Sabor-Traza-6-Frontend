@@ -7,7 +7,7 @@ const BenefitsSection: React.FC = () => {
   const isMobile = useMediaQuery('(max-width:600px)');
 
   return (
-    <Box sx={{ py: 4, backgroundColor: '#c62828', color: '#fff' }}>
+    <Box sx={{ py: 4, backgroundColor: '#E66200', color: '#fff' }}>
       <Typography
         variant="h4"
         component="h2"
@@ -21,30 +21,30 @@ const BenefitsSection: React.FC = () => {
         <Carousel.Item>
           <Box sx={{ pb: 6, width: '100%' }}>
             <Typography variant="h6" align="center" sx={{ fontSize: isMobile ? '1rem' : '1.25rem' }}>
-              Variedad de opciones
+              Calidad de Ingredientes
             </Typography>
             <Typography variant="body2" align="center">
-              Ofrecemos una amplia gama de platos para satisfacer todos los gustos y preferencias.
+              Utilizamos solo los ingredientes más frescos y de la más alta calidad para asegurar que cada plato sea delicioso y nutritivo.
             </Typography>
           </Box>
         </Carousel.Item>
         <Carousel.Item>
           <Box sx={{ pb: 6, width: '100%' }}>
             <Typography variant="h6" align="center" sx={{ fontSize: isMobile ? '1rem' : '1.25rem' }}>
-              Entrega rápida
+              Variedad y Creatividad
             </Typography>
             <Typography variant="body2" align="center">
-              Nuestro servicio de entrega rápido garantiza que recibas tu comida caliente y fresca en poco tiempo.
+              Nuestra carta ofrece una extensa variedad de opciones, desde entrantes hasta postres, para satisfacer todos los gustos y preferencias.
             </Typography>
           </Box>
         </Carousel.Item>
         <Carousel.Item>
           <Box sx={{ pb: 6, width: '100%' }}>
             <Typography variant="h6" align="center" sx={{ fontSize: isMobile ? '1rem' : '1.25rem' }}>
-              Calidad premium
+              Experiencia del Cliente
             </Typography>
             <Typography variant="body2" align="center">
-              Utilizamos ingredientes frescos y de alta calidad para asegurar el mejor sabor en cada plato que ofrecemos.
+              Nuestro equipo de servicio está altamente capacitado para ofrecer una atención amable, rápida y eficiente, asegurando una experiencia culinaria placentera.
             </Typography>
           </Box>
         </Carousel.Item>

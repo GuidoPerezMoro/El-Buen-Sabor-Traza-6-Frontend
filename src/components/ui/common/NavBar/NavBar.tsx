@@ -53,7 +53,7 @@ const Navbar: React.FC<NavbarProps> = ({ cart, onCartClick }) => {
   );
 
   return (
-    <AppBar position="sticky" color="primary">
+    <AppBar position="sticky" style={{backgroundColor:'#E66200'}}>
       <Toolbar>
         <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center' }}>
           <Link to="/" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center', gap: '8px' }}>
