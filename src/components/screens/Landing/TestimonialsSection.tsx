@@ -13,7 +13,7 @@ const TestimonialsSection: React.FC = () => {
         align="center"
         sx={{ fontSize: isMobile ? '1.5rem' : '2rem' }}
       >
-        Testimonios
+        Reseñas
       </Typography>
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
