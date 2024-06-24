@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const NavLinks: React.FC = () => {
   return (
     <nav style={{ display: 'flex', gap: '16px' }}>
-      <CustomLink to="/">Inicio</CustomLink>
+      {/*<CustomLink to="/">Inicio</CustomLink>*/}
       <CustomLink to="/productos">Productos</CustomLink>
       <CustomLink to="/promociones">Promociones</CustomLink>
     </nav>
