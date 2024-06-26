@@ -1,4 +1,5 @@
 import IDetallePedido from "./IDetallePedido";
+import { Estado } from "./enums/Estado";
 import { FormaPago } from "./enums/FormaPago";
 import { TipoEnvio } from "./enums/TipoEnvio";
 
@@ -6,8 +7,8 @@ export default interface IPedido {
   id?: number;
   tipoEnvio: TipoEnvio;
   formaPago: FormaPago;
-  estado:string;
-  fechaPedido?: string;
+  estado: Estado;
+  fechaPedido?: Date;
   detallePedidos: IDetallePedido[];
   idCliente: number;
   idDomicilio: number; // Modificado de IDomicilio a number

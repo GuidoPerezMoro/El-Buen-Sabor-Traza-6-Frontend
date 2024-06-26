@@ -2,6 +2,9 @@ import React from 'react';
 import { Button, Typography, ListItem, List, Drawer, ListItemText } from '@mui/material';
 import CartProduct from '../../../../types/CartProduct';
 import IProducto from '../../../../types/IProducto';
+import { TipoEnvio } from '../../../../types/enums/TipoEnvio';
+import { FormaPago } from '../../../../types/enums/FormaPago';
+import { Estado } from '../../../../types/enums/Estado';
 
 
 interface CartComponentProps {
@@ -21,6 +24,31 @@ const CartComponent: React.FC<CartComponentProps> = ({ cart, open, onClose, onAd
   }, 0).toFixed(2);
 
 
+  const handlePagoClick = async () => {
+    if (total == "0" && cart.length > 0) {
+
+      // Crear los detalles del pedido a partir del carrito
+      const detallesPedido = cart.map((item) => ({
+ 
+        cantidad: item.quantity,
+        subtotal: item.precioVenta,
+        idArticulo: item.id,
+      }));
+
+      // Crear el objeto pedido
+      const pedido = {
+        id: 0, // Asignamos un id temporal (puede ser opcional)
+        tipoEnvio: TipoEnvio.DELIVERY,
+        formaPago: FormaPago.MERCADO_PAGO,
+        estado: Estado.PREPARACION,
+        fechaPedido: new Date(),
+        detallesPedidos: detallesPedido,
+        total: Number(total),
+      };
+    } else {
+      alert("Agregue al menos un producto al carrito");
+    }
+  }
 
 
   return (
