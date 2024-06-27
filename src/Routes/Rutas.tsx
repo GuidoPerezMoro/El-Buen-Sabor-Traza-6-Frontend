@@ -6,7 +6,6 @@ import useCartLogic from '../utils/cartLogic';
 import CartComponent from '../components/ui/common/Cart/CartComponent';
 import ProductosPage from '../components/screens/Products/ProductsPage';
 
-import Main from '../components/screens/Landing/Main';
 import IProducto from '../types/IProducto';
 import IPromocion from '../types/IPromocion';
 import { RootState } from '../redux/store/store';

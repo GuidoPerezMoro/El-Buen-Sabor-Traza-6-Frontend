@@ -8,7 +8,7 @@ export default interface IPedido {
   tipoEnvio: TipoEnvio;
   formaPago: FormaPago;
   estado: Estado;
-  fechaPedido?: Date;
+  fechaPedido?: String;
   detallePedidos: IDetallePedido[];
   idCliente: number;
   idDomicilio: number; // Modificado de IDomicilio a number
