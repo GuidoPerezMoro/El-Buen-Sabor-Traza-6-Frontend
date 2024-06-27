@@ -121,7 +121,7 @@ const ProductosPage: React.FC<ProductosPageProps> = ({ addToCart }) => {
           textAlign='center'
           sx={{ fontSize: isMobile ? '1rem' : '1.25rem' }}
         >
-          Explora tus productos favoritos en nuestra tienda.
+          ¡Explora tus productos favoritos en nuestra tienda!
         </Typography>
         <Box
           display="flex"
@@ -174,7 +174,7 @@ const ProductosPage: React.FC<ProductosPageProps> = ({ addToCart }) => {
           </FormControl>
         </Box>
         {loading ? (
-          <CircularProgress />
+          <CircularProgress style={{color:'#E66200'}} />
         ) : (
           products.length === 0 ? (
             <NoResultsCard />
