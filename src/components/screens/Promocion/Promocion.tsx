@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Typography, TextField, Box, Container, Grid, Button, CircularProgress, useMediaQuery } from '@mui/material';
-import IPromocion from '../../types/IPromocion';
-import PromocionService from '../../services/PromocionService';
-import PromocionCard from '../ui/Cards/PromocionCard';
-import NoResultsCard from '../ui/Cards/NoResultsCard';
+import IPromocion from '../../../types/IPromocion';
+import PromocionService from '../../../services/PromocionService';
+import PromocionCard from '../../ui/Cards/PromocionCard';
+import NoResultsCard from '../../ui/Cards/NoResultsCard';
 
 const promocionService = new PromocionService();
 

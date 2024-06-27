@@ -9,7 +9,7 @@ import ProductosPage from '../components/screens/Products/ProductsPage';
 import IProducto from '../types/IProducto';
 import IPromocion from '../types/IPromocion';
 import { RootState } from '../redux/store/store';
-import PromocionesPage from '../components/Promocion/Promocion';
+import PromocionesPage from '../components/screens/Promocion/Promocion';
 
 const Rutas: React.FC = () => {
   const productos = useSelector((state: RootState) => state.productos.data);

@@ -45,7 +45,7 @@ const ProductoModal: React.FC<ProductoModalProps> = ({ open, onClose, productId 
         bgcolor: 'background.paper', // Añadido para asegurar el fondo blanco en todo el modal
       }}>
         {loading ? (
-          <CircularProgress />
+          <CircularProgress style={{color:'#E66200'}}/>
         ) : (
           producto && (
             <Card sx={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row', gap: 2 }}>

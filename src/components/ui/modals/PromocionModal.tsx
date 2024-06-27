@@ -41,7 +41,7 @@ const PromocionModal: React.FC<PromocionModalProps> = ({ open, onClose, promocio
     <Modal open={open} onClose={onClose}>
       <Box sx={{ ...modalStyle, width: isMobile ? '90%' : '80%', maxHeight: '80%', overflowY: 'auto' }}>
         {loading ? (
-          <CircularProgress />
+          <CircularProgress style={{color:'#E66200'}}/>
         ) : (
           promocion && (
             <>
