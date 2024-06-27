@@ -72,7 +72,7 @@ const PromocionesPage: React.FC<PromocionesPageProps> = ({ addToCart }) => {
           textAlign='center'
           sx={{ fontSize: isMobile ? '1rem' : '1.25rem' }}
         >
-          Encuentra las mejores promociones en nuestra tienda
+          ¡Encuentra las mejores promociones en nuestra tienda!
         </Typography>
         <Box display="flex" width="100%" mb={2} sx={{ flexDirection: { xs: 'column', sm: 'row' }, gap: { xs: 2, sm: 0 } }}>
           <TextField
@@ -85,7 +85,7 @@ const PromocionesPage: React.FC<PromocionesPageProps> = ({ addToCart }) => {
           />
         </Box>
         {loading ? (
-          <CircularProgress />
+          <CircularProgress style={{color:'#E66200'}}/>
         ) : (
           promociones.length === 0 ? (
             <NoResultsCard />
