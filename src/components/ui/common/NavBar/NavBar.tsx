@@ -56,9 +56,9 @@ const Navbar: React.FC<NavbarProps> = ({ cart, onCartClick }) => {
     <AppBar position="sticky" style={{backgroundColor:'#E66200'}}>
       <Toolbar>
         <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center' }}>
-          <Link to="/" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <FastfoodIcon />
-            <Typography variant="h6">Buen Sabor</Typography>
+          <Link to="/" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center', gap: '0px' }}>
+            <FastfoodIcon style={{width:'40px'}}/>
+            <Typography variant="h4">Buen Sabor</Typography>
           </Link>
         </Box>
         {isMobile ? (
