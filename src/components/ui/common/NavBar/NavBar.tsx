@@ -40,9 +40,6 @@ const Navbar: React.FC = () => {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        <ListItem button component={Link} to="/">
-          <ListItemText primary="Inicio" />
-        </ListItem>
         <ListItem button component={Link} to="/productos">
           <ListItemText primary="Productos" />
         </ListItem>
@@ -88,16 +85,6 @@ const Navbar: React.FC = () => {
           </>
         ) : (
           <Box sx={{ display: "flex", alignItems: "center" }}>
-            <Link
-              to="/"
-              style={{
-                textDecoration: "none",
-                color: "inherit",
-                marginRight: "20px",
-              }}
-            >
-              <Typography variant="h6">Inicio</Typography>
-            </Link>
             <Link
               to="/productos"
               style={{
