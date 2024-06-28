@@ -14,7 +14,6 @@ import {
 import FastfoodIcon from "@mui/icons-material/Fastfood";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
-import NavLinks from "./NavLinks";
 
 const Navbar: React.FC = () => {
   const [drawerOpen, setDrawerOpen] = React.useState(false);
